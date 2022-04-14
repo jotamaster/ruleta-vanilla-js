@@ -1,0 +1,66 @@
+html{
+    color: white;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.Uno, .Dos, .Tres, .Cuatro, .Cinco, .Seis, .Siete, .Ocho{
+    border-radius: 20px;
+    height: 250px;
+    text-align: center;
+    font-size: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Uno{
+    background-color: rgb(131, 77, 110);
+}
+.Dos{
+    background-color: rgb(88, 118, 173);
+}
+.Tres{
+    background-color: rgb(86, 191, 118);
+}
+.Cuatro{
+    background-color: rgb(225, 147, 147);
+}
+.Cinco{
+    background-color: rgb(101, 17, 92);
+}
+.Seis{
+    background-color: rgb(255, 208, 0);
+}
+.Siete{
+    background-color: rgb(244, 84, 167);
+}
+.Ocho{
+    background-color: rgb(37, 29, 118);
+}
+.btn{
+    font-size: 30px;
+    text-align: center;
+    grid-column: 2 / 4;
+    margin-top: 170px;
+    height: 50px;
+    background-color: rgb(186, 186, 248);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s linear 0.2s;
+}
+.btn:hover{
+    background-color: rgb(101, 101, 233);
+    color: white;
+}
+
+.active{
+    -webkit-box-shadow: 0px 0px 15px 5px #ad0000;
+    box-shadow: 0px 0px 15px 5px #ba0000;
+    opacity: 0.9;
+}
+.deleted{
+    background-color: black;
+}
